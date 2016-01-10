@@ -1,0 +1,31 @@
+body {
+    background-color: #badaee;
+}
+
+.footer {
+    bottom: 2px;
+    position: fixed;
+    background: #8cc2e3;
+    width: 100%;
+    z-index: 50px;
+}
+
+.container .container {
+    margin: 20px auto;
+    min-width: 30%;
+    max-width: 70%;
+    padding: 0px 10px;
+}
+
+.sradio, .cradio {
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+}
+.rdiv{
+	position: relative;
+} 
+#formamount .glyphicon{
+	margin-right: 50px;
+	z-index: 50;
+}

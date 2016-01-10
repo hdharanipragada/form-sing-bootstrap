@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../form_bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../form_bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../form_bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../form_bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="background-color:#8cc2e3">
+            <div class="col-sm-3 "><img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/3d-glossy-blue-orbs-icons-sports-hobbies/041788-3d-glossy-blue-orb-icon-sports-hobbies-camping.png" class="img-circle" height="80px" width="100px"></div>
+            <div class="col-sm-6">
+                <h2 class="text-center">Form using Bootstrap </h2>
+            </div>
+            <div class="col-sm-3 text-right" id="displayname">
+                <h3>UserName</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container" style="background-color:#cee0f4 ">
+                <form class="horizontal-group " id="userform">
+                    <h4>Hema Dharanipragada</h4>
+                    <label for="Name">Name:</label>
+                    <div id="formname">
+                        <input type="text" class="form-control" id="Name" oninput="fnNameValidation()" placeholder="Enter Name" autofocus="" required><span id="glynameicon"></span>
+                        <span id="helptext1"></span>
+                    </div>
+                    <label for="Amount">Amount (in dollars):</label>
+                    <div class="input-group" id="formamount">
+                        <span class="input-group-addon">$</span>
+                        <span id="glyamounticon"></span>
+                        <input type="text" class="form-control" id="Amount" placeholder="Amount" oninput="fnAmountValidation()">
+                        <span class="input-group-addon">.00</span>
+                    </div>
+                    <span id="helptext2"></span>
+                    <label for="password">Password:</label>
+                    <div id="formpassword">
+                        <input type="password" class="form-control" id="password" placeholder="Enter password" required oninput="fnPasswordValidation()">
+                        <span id="glypwdicon"></span>
+                        <span id="helptext3"></span>
+                    </div>
+                    <div class="rdiv">
+                        <div class="form-group">
+                            <label class="radio-inline">
+                                <input type="radio" id="sradio">Savings</label>
+                            <label class="radio-inline">
+                                <input type="radio" id="cradio">Current</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-sm btn-primary" type="submit" onclick="return fnFormValidation()">Submit</button>
+                        <button class="btn btn-sm btn-primary" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">&copy;copyrights</div>
+    <script type="text/javascript" src="form.js"></script>
+</body>
+
+</html>
